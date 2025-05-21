@@ -1,0 +1,170 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{res}
+\usepackage{fontawesome5}
+\usepackage{csquotes}
+\input{glyphtounicode}
+
+%for the bibliography
+\usepackage[
+    style=apa,
+    sortcites=true,
+    backend=biber,natbib,
+    labeldate=year
+]{biblatex}
+\addbibresource{publications.bib}
+% Ensure only the year is displayed in citations & references
+\AtEveryBibitem{\clearfield{month}\clearfield{day}\clearfield{date}}
+\AtEveryCitekey{\clearfield{month}\clearfield{day}\clearfield{date}}
+
+\begin{document}
+
+%----------HEADING----------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textsc{\href{https://huwcheston.github.io/}{\Large Huw Cheston}} & \faMap \ Location: \textsc{London, UK} \\ 
+  \href{https://huwcheston.github.io/}{\faGlobe \ Website: https://huwcheston.github.io/} & \faEnvelope \ Email: hwc31@cam.ac.uk \\  \href{https://github.com/huwcheston}{\faGithub \ GitHub: https://github.com/huwcheston} & \faPhone \ Phone: +44 7474 654583 \\
+\end{tabular*}
+
+% \href{https://scholar.google.com/citations?user=byas-BIAAAAJ\&hl=en}{Google Scholar} --- 
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    % \resumeSubheading
+    %   {Data Scientist}{June 2025 --}
+    %   {Colossal.FM (Part-Time)}{Remote}
+    %   \resumeItemListStart
+    %     \resumeItem{}
+    %   \resumeItemListEnd
+
+    \resumeSubheading
+      {Research Assistant, Multimodal AI}{May 2025 --}
+      {Queen Mary University of London (Part-Time)}{London, UK}
+      \resumeItemListStart
+        \resumeItem{Conducted research into multimodal machine perception \textbf{in collaboration with Meta} (\href{https://www.projectaria.com/}{Project Aria}).}
+        \resumeItem{Developed machine-learning models that combine vision and audio to produce representations of real-world scenes.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Research Scientist Intern, Audio Intelligence}{June -- August 2024}
+      {Spotify}{London, UK}
+      \resumeItemListStart
+        \resumeItem{Developed end-to-end deep learning model for identifying copyrighted samples in catalogue audio recordings, \textbf{driving downstream product applications} in music content categorisation \& plagiarism detection}
+        \resumeItem{Results \textbf{outperformed competing system (``Shazam'') by 9x}, improved upon internal model by \textbf{13\%}}
+        \resumeItem{Managed pipelines for generating artificial training data at \textbf{petabyte-scale} using Google Cloud \& Apache Beam}
+        \resumeItem{Deployed training runs on distributed GPU clusters using Ray \& Kubernetes}
+        \resumeItem{\textbf{Presented results} to senior company stakeholders and in a scientific paper \href{https://arxiv.org/abs/2502.06364}{[accessible at arXiv:2502.06364]}}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Music Data Science Lecturer \& Supervisor}{2021 -- 2024}
+      {University of Cambridge}{Cambridge, UK}
+      \resumeItemListStart
+      \resumeItem{Delivered \textbf{100+} undergraduate supervisions and lectures on  modelling and visualisation of audio data}
+      \resumeItem{\textbf{Managed} 4 undergraduate students on music-related data science and machine learning projects}
+    \resumeItemListEnd
+
+    % \resumeSubheading
+    %   {Data Science Instructor}{2023}
+    %   {Sutton Trust}{Cambridge, UK}
+    %   \resumeItemListStart
+    %     \resumeItem{Delivered workshops on music + data science for secondary-age students from state-educated backgrounds}
+    %     \resumeItem{Designed interactive coding and statistics exercises on Google Colab, hosted on GitHub Pages}
+    % \resumeItemListEnd
+
+    \resumeSubheading
+      {Teaching Assistant}{2020 -- 2021}
+      {Kingswood School}{Bath, UK}
+      \resumeItemListStart
+      \resumeItem{Planned \& taught music technology lessons, both in-classroom and virtually during COVID}
+      \resumeItem{Managed recording studio and music technology suite, produced promotional audio-visual material for the school}
+    \resumeItemListEnd
+
+    \resumeSubheading
+      {Professional Musician}{2016 -- 2020}
+      {Freelance}{UK}
+      \resumeItemListStart
+      \resumeItem{Worked with internationally recognised acts including \textit{Clean Bandit}, \textit{Everything Everything}, \& \textit{Dinosaur}.} 
+      \resumeItem{Performed regularly around the UK \& abroad, in front of crowds exceeding 30,000+ capacity.}
+    \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Cambridge}{2021 -- 2025}
+      {Ph.D, Music Computing}{Cambridge, UK}
+      \resumeItemListStart
+        % comment out for "professional"/non-academic
+        % \resumeItem{\textbf{Thesis title}: Computational Modelling of Jazz Improvisation}
+        \resumeItem{\textbf{Advanced state-of-the-art} in music computing tasks including automatic artist identification from audio}
+        \resumeItem{Published \textbf{5 first author} papers with several in major (top-20) science \& computer science journals}
+        \resumeItem{Fully-funded with £80k competitive research grant from Cambridge Trust}
+        % comment out for "professional"/non-academic
+        \resumeItem{\textbf{Service:} peer review for \textit{Transactions of the International Society of Music Information Retrieval}, \textit{Music \& Science} journals, \textit{International Society for Music Information Retrieval} conference}
+      \resumeItemListEnd
+    \resumeSubheading
+      {University of Oxford}{2016 -- 2020}
+      {BA + MSt., Music}{Oxford, UK}
+      \resumeItemListStart
+        \resumeItem{Graduated with \textbf{highest mark in year}, 85\% average}
+        \resumeItem{Fully-funded masters study with £25k research grant from Linacre College, Oxford}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------SKILLS-----------
+\section{Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Stats}{: multi-level modelling, NHST workflows, time-series analysis, experiment design, optimisation} \\
+     \textbf{Inference}{: simulation, AB testing, hypothesis testing, bootstrapping, causal inference, dimensionality reduction,} \\
+     \textbf{Machine Learning}{: explainability, generative modelling, artificial datasets, neural networks, big data} \\
+     \textbf{Languages}{: Python, JavaScript, HTML/CSS, R, SQL} \\
+     \textbf{Tools}{: Git, Unix, \LaTeX, Google Cloud Platform, Apache Beam, Docker, Ray, MLFlow} \\
+     \textbf{Libraries}{: pandas, matplotlib, scipy, scikit-learn, pytorch, statsmodels, huggingface, numpy, librosa, captum, open-ai} \\
+     \textbf{Domain Knowledge}{: music categorisation \& retrieval, audio signal processing, natural language processing} \\
+    \textbf{Audio Production}{: ambisonics, binaural audio, multichannel setups, digital audio workstations}
+    }}
+ \end{itemize}
+
+%-----------OPEN SOURCE-----------
+\section{Open Source Contributions}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{
+    \item{
+    \href{https://github.com/mir-dataset-loaders/mirdata}{\texttt{mirdata}} (190k+ installs) major feature development and optimisations to data architecture for a Python library that standardizes access to audio datasets commonly used in machine learning research and development
+    }
+    \item{
+    \href{https://github.com/Natooz/MidiTok}{\texttt{miditok}} (150k+ installs) bug fixes and optimisations for a music tokenization Python library used in generative AI music
+    }}
+\end{itemize}
+
+%-----------PUBLICATIONS-----------
+% comment out for "professional"/non-academic
+\section{Selected Publications}
+\nocite{*}
+  \resumeSubHeadingListStart
+    \resumeSubheading{Journal Articles}{}{}{}
+    \printbibliography[heading=none, keyword=paper]
+    \resumeSubheading{Preprints}{}{}{}
+    \printbibliography[heading=none, keyword=preprint]
+    \resumeSubheading{Conference Proceedings}{}{}{}
+    \printbibliography[heading=none, keyword=proceedings]
+\resumeSubHeadingListEnd
+
+%-------------------------------------------
+\section{References Available on Request}
+\end{document}
